@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MovieDetailViewController-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailViewController" title="MovieDetailViewController" id="Y6W-OH-hqX" customClass="MovieDetailViewController" customModule="MovieBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Star Wars" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKq-vU-gsN">
+                                <rect key="frame" x="20" y="72" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Release Date: 5/25/77" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prj-qd-72J">
+                                <rect key="frame" x="20" y="110" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.41999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-Bg-KBC">
+                                <rect key="frame" x="6" y="151" width="195" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="VbI-yP-Jb6"/>
+                                    <constraint firstAttribute="width" constant="195" id="hp7-SC-PhA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZh-a3-FJa">
+                                <rect key="frame" x="209" y="151" width="199" height="215"/>
+                                <string key="text">Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="prj-qd-72J" secondAttribute="trailing" constant="20" id="0dn-F1-1mc"/>
+                            <constraint firstItem="GKq-vU-gsN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4Te-9q-8wn"/>
+                            <constraint firstItem="prj-qd-72J" firstAttribute="top" secondItem="GKq-vU-gsN" secondAttribute="bottom" constant="8" symbolic="YES" id="87Y-dW-AtL"/>
+                            <constraint firstItem="Ck2-Bg-KBC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="6" id="9Ce-O0-0yL"/>
+                            <constraint firstItem="Ck2-Bg-KBC" firstAttribute="top" secondItem="prj-qd-72J" secondAttribute="bottom" constant="24" id="FuM-r8-ATD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BZh-a3-FJa" secondAttribute="trailing" constant="6" id="O5w-OS-5vJ"/>
+                            <constraint firstItem="BZh-a3-FJa" firstAttribute="top" secondItem="prj-qd-72J" secondAttribute="bottom" constant="24" id="WhU-g9-aA4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BZh-a3-FJa" secondAttribute="bottom" constant="10" id="bq6-DL-jbe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GKq-vU-gsN" secondAttribute="trailing" constant="20" id="cAi-uT-OMp"/>
+                            <constraint firstItem="GKq-vU-gsN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="28" id="fZM-o5-C4Z"/>
+                            <constraint firstItem="prj-qd-72J" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="oax-Ii-eez"/>
+                            <constraint firstItem="BZh-a3-FJa" firstAttribute="leading" secondItem="Ck2-Bg-KBC" secondAttribute="trailing" constant="8" id="vhp-YK-zrB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailDate" destination="prj-qd-72J" id="YcE-HA-dbT"/>
+                        <outlet property="detailImage" destination="Ck2-Bg-KBC" id="q3m-ln-Av4"/>
+                        <outlet property="detailOverview" destination="BZh-a3-FJa" id="z3h-2m-isD"/>
+                        <outlet property="detailTitle" destination="GKq-vU-gsN" id="xh2-Je-68C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="187" height="317"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
